@@ -1,0 +1,68 @@
+.hero {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &:hover .swiper-button-next{
+        right: 32px !important;
+        transition: all 0.5s;
+    }
+
+    &:hover .swiper-button-prev{
+        left: 32px !important;
+        transition: all 0.5s;
+    }
+}
+
+// .hossam {
+//     left: 0;
+//     top: 50%;
+//     width: 20px;
+//     height: 20px ;
+//     color: black;
+//     position: absolute;
+//     padding: 10px;
+//     color: black;
+//     background: green;
+//     z-index: 8;
+//     font-size: 20px;
+// }
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 20px !important;
+    height: 20px !important;
+    color: black !important;
+    position: absolute;
+    padding: 10px;
+    color: black;
+    background: white;
+    font-size: 20px;
+    @media screen and (max-width: 992px) {
+        visibility: hidden;
+    }
+
+    &:hover {
+        background: black;
+        color: white !important;
+    }
+    &::after {
+        content: "" !important;
+    }
+}
+
+.swiper-button-next {
+    right: -40px !important;
+}
+
+.swiper-button-prev {
+    left: -40px !important;
+}
+
+.swiper-button-disabled {
+    opacity: 1  !important;
+}
+
