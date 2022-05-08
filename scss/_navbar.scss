@@ -1,7 +1,18 @@
 .nav {
     height: 60px;
-    position: relative;
     z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &__scroll {
+        box-shadow: 2px 8px 47px -6px rgba(171,145,145,0.95);
+        background-color: rgba(255, 255, 255, 0.986);
+    }
 
     &__content {
         display: flex;

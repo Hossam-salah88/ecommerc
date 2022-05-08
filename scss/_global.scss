@@ -59,3 +59,30 @@ img {
     }
 }
 
+// =========== Title section ================
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover .section__underLine {
+    width: calc(80px + 40px);
+  }
+  
+  &__title {
+    color: $colorfont;
+    font-size: 2.1875rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__underLine {
+    width: 80px;
+    height: 3px;
+    border-radius: 4px;
+    background: $underLine;
+    transition: width 0.4s;
+  }
+}
+
